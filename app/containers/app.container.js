@@ -34,7 +34,7 @@ class AppContainer extends React.Component {
 
   prepareUrl(url) {
     //Attach client id to stream url
-    return `${url}?client_id=${this.client_id}`
+      return `${url}?client_id=${this.client_id}`;
   }
 
   xlArtwork(url){
@@ -45,10 +45,10 @@ class AppContainer extends React.Component {
     // Check current playing state
     if(this.state.playStatus === Sound.status.PLAYING){
       // Pause if playing
-      this.setState({playStatus: Sound.status.PAUSED})
+        this.setState({playStatus: Sound.status.PAUSED});
     } else {
       // Resume if paused
-      this.setState({playStatus: Sound.status.PLAYING})
+        this.setState({playStatus: Sound.status.PLAYING});
     }
   }
 
@@ -100,7 +100,7 @@ class AppContainer extends React.Component {
   handleSongPlaying(audio){
      this.setState({  elapsed: this.formatMilliseconds(audio.position),
                       total: this.formatMilliseconds(audio.duration),
-                      position: audio.position / audio.duration })
+                      position: audio.position / audio.duration });
    }
 
   handleSongFinished () {
@@ -133,7 +133,8 @@ class AppContainer extends React.Component {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),   url(${this.xlArtwork(this.state.track.artwork_url)})`
-    }
+    };
+      
     return (
       <div className="scotch_music" style={scotchStyle}>
         <Search
@@ -167,4 +168,4 @@ class AppContainer extends React.Component {
   }
 }
 
-export default AppContainer
+export default AppContainer;

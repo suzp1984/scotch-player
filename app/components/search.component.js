@@ -22,7 +22,7 @@ class Search extends React.Component{
         key={item.id}
         id={item.id}
       >{item.title}</div>
-    )
+    );
   }
   render() {
     return (
@@ -42,4 +42,4 @@ class Search extends React.Component{
   }
 }
 
-export default Search
+export default Search;

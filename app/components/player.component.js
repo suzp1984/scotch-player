@@ -25,9 +25,9 @@ class Player extends React.Component {
           <button onClick={this.props.forward}><i className="fa fa-forward"></i></button>
         </div>
       </div>
-    )
+    );
   }
 
 }
 
-export default Player
+export default Player;
