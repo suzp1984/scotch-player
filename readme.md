@@ -1,3 +1,7 @@
+# Tutorial
+
+[Scotch.io tutorial](https://scotch.io/tutorials/build-a-music-player-with-react-electron-i-setup-basic-concepts)
+
 # Scotch Player Demo
 ![App](https://cdn.scotch.io/10/WwAKh2uLTwOEF4TUOnik_scotch-player.gif)
 
